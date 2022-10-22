@@ -1,0 +1,10 @@
+
+.sectionEducationBg {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0%;
+    width: 100%;
+    background: url("../assets/_01_schoolSection/_04_snow_bg.jpeg") no-repeat fixed ;
+    height: 150vh;
+}

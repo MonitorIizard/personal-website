@@ -1,0 +1,31 @@
+
+.container_profile {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0%;
+    width: 100%;
+    background: url("../assets/_00_profilesPic.jpg") no-repeat fixed center -300px;
+    height: 100vh;
+}
+
+
+.container_profile h1{
+    color: aliceblue;
+}
+
+.table th {
+    padding-right: 25px;
+}
+
+.icon {
+    fill: white;
+}
+
+.icon:hover {
+    fill: orange;
+}
+
+.profile_discription {
+    padding-bottom: 10px;
+}
