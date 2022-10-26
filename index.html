@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="css/_00_nav_bar.css">
+    <link rel="stylesheet" href="css/_01_firstSection.css">
+    <link rel="stylesheet" href="css/_03_educational record.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        body
+        {
+            font-family: 'Noto Sans Mono', monospace;
+        }
+        
+    </style>
+    
+</head>
+
+<body class="overflow-x-hidden overscroll-y-none">
+
+        <!-- TODO Navbar -->
+
+        <!--* navBarOverlay -->
+        <section>
+            
+            <div>
+                <button class=" z-10 fixed right-10 top-10 hover:bg-gray-800 bg-black p-4 rounded-xl bg-opacity-50" onclick="toggle()">
+                    <svg class="hover:stroke-orange-300 stroke-white w-8 " xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 64 64"><line x2="64" y1="15.95" y2="15.95" fill="None"  stroke-miterlimit="10" stroke-width="4"/><line x2="64" y1="32.15" y2="32.15" fill="none"  stroke-miterlimit="10" stroke-width="4"/><line x2="64" y1="48.05" y2="48.05" fill="none"  stroke-miterlimit="10" stroke-width="4"/></svg>
+                </button>
+            </div>
+
+            <div class="overlay " id="overlay" >
+
+                <div class="bg-black background relative flex justify-end">
+
+                    <div class="z-20 absolute bg-gray-900 h-screen w-1/4 text-white text-3xl flex justify-around flex-col p-14">
+                        <a href="#Mybio" onclick="toggle()"><h1 class="">My bio</h1></a>
+                        <a href="#Hobby" onclick="toggle()"><h1 class="">Hobby</h1></a>
+                        <a href="#Educationalrecord" onclick="toggle()"><h1 class="">Educational record</h1></a>
+                        <a href="#Article" onclick="toggle()"><h1 class="">Article</h1></a>
+                    </div>
+
+                    <img src="assets/_03_navbar.jpg" alt="" class="brightness-50 z-10 inset-0">  
+                    
+                </div>
+
+            </div>
+
+            <!--* navbar button -->
+
+            <script>
+                 
+                function toggle() { // getElementById เอา id เเรกที่เจอ
+                    if (document.getElementById("overlay").style.display == "block") {
+                        document.getElementById("overlay").style.display = "none" 
+
+                    } else {
+                        document.getElementById("overlay").style.display = "block" 
+                    }
+
+                    console.log("test")
+                }
+                
+            </script>
+
+        </section>
+
+        <!-- TODO Introduction -->
+
+        <section  class="container_profile p-28">
+
+            <div>
+
+                <div class="bg-black w-fit rounded-2xl bg-opacity-50">
+                    <h1 class="text-2xl pb-8 ">Greeting</h1>
+                    <h1 class="text-2xl pb-8">My name is Mok</h1>
+                    <h1 class="text-2xl pb-8">computer science student</h1>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Todo profile -->
+        
+        <section id="Mybio" class="box h-auto pb-10" style="background: #1e1e1e;">
+            
+            <div class="flex justify-around items-center">
+
+                <!--* mokPicture -->
+
+                <div class="shadow" >
+                    <h1 class="underline  decoration-orange-500 text-white text-6xl py-8">My bio</h1>
+                    <img src="/assets/_01_mok_profile.jpeg" alt="" class="w-80 h-auto rounded-lg profile_picture_shadow ">
+                </div>
+
+                <!--* text beside picture -->
+
+                <div class="pt-28">
+
+                    <div class="p-8 shadow-md shadow-slate-100 rounded-2xl">
+
+                            <p class="text-white pb-8 text-lg">
+                                <span class="font-bold underline decoration decoration-orange-500 text-3xl">Name</span> 
+                                <span class="text-3xl">:</span> 
+                                <span style="font-size: 25px">Mok Maard</span> 
+                            </p>
+        
+                            <p class="text-white pb-8 text-lg">
+                                <span class="font-bold underline decoration-orange-500 text-3xl">SID</span>
+                                <span class="text-3xl">:</span>  
+                                <span style="font-size: 25px;"> 6504062620159</span> 
+                            </p>
+        
+                            <p class="text-white pb-8 text-lg">
+                                <span class="font-bold underline decoration-orange-500 text-3xl">Address</span> 
+                                <span class="text-3xl">:</span> 
+                                <span style="font-size: 25px;">24/156 Viphavadi 37 </br> 
+                                <span class="underline decoration-orange-300"> sub-district</span> 
+                                <span > : sanambin,  </span>
+                                </br>
+                                <span class="underline decoration-orange-300">sub-area</span>
+                                <span> : Donmueng</span>
+                            </p>
+        
+                            <p class="text-white pb-8 text-lg"><span class="font-bold underline decoration-orange-500 text-3xl">Future Goal</span>
+                                <span class="text-3xl">:</span>  
+                                <span style="font-size: 25px;">be a good Programmer, 
+                                </br>
+                                 love to learning new idea  and having 1% 
+                                </br>
+                                 of good habit everyday</span>
+                            </p>
+        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- TODO hobby -->
+
+        <section id="Hobby" class="sectionEducationBg pl-32 pt-16 grid grid-cols-4 gap-0">
+
+            <div>
+                <h1 class="text-white text-3xl">When  I  have  free</h1>
+                <img class="w-fit h-fit pt-20 mb-16" src="assets/placeHolder.jpg" alt="">
+            </div>
+
+            <div>
+                <h1 class="text-white text-3xl">time,</h1>
+                <img class="w-fit h-fit pt-12" src="assets/placeHolder.jpg" alt="">
+            </div>
+            
+            <img class="w-fit h-fit pt-10" src="assets/placeHolder.jpg" alt="">
+
+            <div class="text-white text-3xl">
+                <img class="w-fit h-fit " src="assets/placeHolder.jpg" alt="">
+                <h1 class="pt-20 pl-10"> I usually.. </h1>
+            </div>
+
+        </section>
+
+
+        <!-- TODO educational record -->
+
+        <section id="Educationalrecord" class="">
+
+            <h1 class="pl-32 py-8 text-4xl text-black" >Educational record</h1>
+
+            <!--* grid -->
+
+            <div class="px-32 grid grid-rows-2 grid-cols-4 gap-4 grid-flow-col"> <!--! set grid = 2 colomn = 4 -->
+
+                <!--* The first -->
+                
+                <div class=" rounded-lg col-span-2 grid grid-cols-2 grid-flow-col bg-slate-100"> <!--! create grid again in child box -->
+
+                    <div class=" flex align-middle bg-slate-50 rounded-lg">
+                        <img src="assets/_01_schoolSection/_00_jirasart.png" alt="" class="object-cover rounded-lg">
+                    </div>  
+
+                    <!--* text beside coding hobby-->
+                    
+                    <div class=" p-14">
+                        <h1 class="text-3xl pb-14">Nursery and Primary School</h1>
+                        <p class="pb-20"> <span class="text-2xl">2006</span>  เข้าศึกษาระดับ<span class="underline decoration-dashed decoration-orange-400">ชั้นอนุบาล</span>ที่โรงเรียน </br> จิระศาสตร์วิทยาเป็นเวลา 3 ปี</p>
+                        <p> <span class="text-2xl">2009</span>  เข้าศึกษาระดับ<span class="underline decoration-dashed decoration-orange-400">ชั้นประถม</span>ที่โรงเรียน </br> จิระศาสตร์วิทยาเป็นเวลา 3 ปี</p>
+                    </div>
+
+                </div>
+
+                <!--* The second -->
+
+                <div class=" rounded-lg col-span-2 flex justify-end bg-slate-100">
+
+                    <!--* text beside pm:school -->
+
+                    <div class="p-14">
+                        <h1 class="pb-14 text-3xl ">Secondary School</h1>
+                        <div class="">
+                            <p> <span class="text-2xl">2015</span> เข้าศึกษา <span class="underline decoration-dashed decoration-orange-300">ระดับมัธยมต้น</span>ที่โรงเรียนมัธยมสาธิตวัดพระศรีมหาธาตุ มหาวิทยาลัยราชภัฏพระนคร เป็นเวลา 3 ปี</p>
+                        </div>
+                    </div>
+
+                    <!--* Pm school -->
+
+                    <img src="assets/_01_schoolSection/_01_middle_school.gif" alt="" class="w-64 rounded-lg object-cover bg-slate-50">
+
+                </div>
+
+                <!--* The third -->
+
+                <div class=" rounded-lg row-span-2  col-span-2 pl-14 bg-slate-100">
+
+                    <!--* Pre engineer School -->
+
+                    <div class="flex justify-center">
+                        <img src="assets/_01_schoolSection/_03_TGPS.png" alt="" class="w-64 rounded-lg pb-14">
+                    </div>
+
+                    <!-- * text  beside pre engineer pic -->
+
+                    <div class="bg-slate-50 h-auto rounded-lg w-fit">
+                        <h1 class="text-2xl pb-7">Vocational College</h1>
+                        <p class="mb-14"> <span class="text-2xl">2018</span> เข้าศึกษาระดับ <span class="underline decoration-dashed decoration-orange-300">ปวช.</span>  ที่ โรงเรียนเตรียมวิศวกรรมศาสตร์ ไทย-เยอรมัน เป็นเวลา 3 ปี</p>
+                    </div>
+
+                    <!--* KMUTNB Picture -->
+
+                    <div class="flex justify-center">
+                        <img src="/assets/_01_schoolSection/_02_high_school_bechelor.png" alt="" class="w-64 pb-14 rounded-lg">
+                    </div>
+
+                    <!--* text beside KMUTNB Picture -->
+
+                    <div class="bg-slate-50 h-auto rounded-lg w-fit">
+                        <h1 class="text-2xl pb-7">University</h1>
+                        <p class="pb-14"> <span class="text-2xl">2022</span> เข้าศึกษาระดับ <span class="underline decoration-dashed decoration-orange-300">ปวช.</span>  ที่ โรงเรียนเตรียมวิศวกรรมศาสตร์ ไทย-เยอรมัน เป็นเวลา 3 ปี</p>
+                    </div>  
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <br>
+        <!-- TODO article section -->
+
+        <section id="Article" class="p-32 flex justify-end bg-slate-100">
+
+            <div>
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo repudiandae nihil ut debitis, provident eum! Nobis ipsam suscipit nihil laborum repellat iusto illum quae beatae, odit nesciunt quia eum iure?</p>
+            </div>
+
+            <img class="w-64 h-fit" src="assets/placeHolder.jpg" alt="">
+
+        </section>
+        
+        <!-- TODO footter -->
+
+        <section class="bg-black text-white">
+
+            <div class="grid grid-cols-3 pt-7 gap-3">
+
+                <!--* Contact us section -->
+
+                <div class="">
+
+                    <h1 class="text-2xl text-center mb-5">Feel Free to Get in Touch</h1>
+
+                    <!-- * instragram section -->
+                    <div class="pl-28">
+
+                    <p>instagram : 
+                        <span class="underline decoration-white hover:text-teal-300 hover:decoration-teal-300">
+                            <a href="https://www.instagram.com/maardmok/">
+                                @MaardMok
+                            </a>
+                        </span>
+                    </p>
+
+                    <!--* facebook section -->
+
+                    <p>Facebook : 
+                        <span class="underline decoration-white hover:text-teal-300 hover:decoration-teal-300">
+                            <a href="https://www.facebook.com/mok.maard.3/">
+                                @Mok Maard
+                            </a>
+                        </span>
+                    </p>
+
+                    <!--* email section -->
+
+                    <p>Email : 
+                        <span class="underline decoration-white hover:text-teal-300 hover:decoration-teal-300">
+                            <a href="mailto: mokmaardworkspace1@gmail.com">
+                                @mokmaardworkspace1
+                            </a>
+                        </span>
+                    </p>
+
+                    <!--* tel section -->
+
+                    <p>Tel : 
+                        <span class="underline decoration-white hover:text-teal-300 hover:decoration-teal-300">
+                            <a href="tel: 0863102395">
+                                0863102395
+                            </a>
+                        </span>
+                    </p>
+
+                    </div>
+
+                </div>
+
+                <!--* Thank section -->
+
+                <div class="text-xs">
+
+                    <h1 class=" text-center text-2xl mb-5">Special Thank To</h1>
+
+                    <ul class="list-disc">
+
+                        <li>The most beautiful nav bar picture by
+                            <a class="underline decoration-white hover:text-teal-300 hover:decoration-teal-300" href="https://unsplash.com/photos/5EUh-tq31eA">
+                                 Birmingham Museums Trust
+                            </a>
+                        </li>
+
+                        <li>My friend, Tonkaew who keep helping me when I struggle <br>
+                            <a class="underline decoration-white hover:text-teal-300 hover:decoration-teal-300" href="http://project.cs.kmutnb.ac.th/~6504062620175">
+                                His website 
+                            </a>
+                        </li>
+
+                        <li>Background photo by 
+                            <a class="underline decoration-white hover:text-teal-300 hover:decoration-teal-300" href="https://www.pexels.com/photo/starry-sky-998641/">Francesco Ungaro from Pexels</a>
+                        </li>
+
+                        <li>
+                            Beautiful and easy to decorate website with 
+                            <span>
+                                <a class="underline decoration-white hover:text-teal-300 hover:decoration-teal-300" href="https://tailwindcss.com/">Tailwind</a>
+                            </span>  
+                            Frame work
+                        </li>
+
+                        <li>
+                            Easy to coding with source code editor, 
+                            <a class="underline decoration-white hover:text-teal-300 hover:decoration-teal-300"  href="https://code.visualstudio.com/">VSCODE</a> 
+                        </li>
+
+                    </ul>
+
+                </div>
+                
+    
+                <div class="text-xs mt-12">
+
+                    <ul class="list-disc">
+                        <li>Wonderful extension that auto refresh page when save, 
+                            <a class="underline decoration-white hover:text-teal-300 hover:decoration-teal-300" href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">LiveServer</a>
+                        </li>
+                    
+                        <li>Beautiful terminal style font from google, 
+                            <a class="underline decoration-white hover:text-teal-300 hover:decoration-teal-300" href="https://fonts.google.com/noto/specimen/Noto+Sans+Mono">Noto Sans Mono</a>
+                        </li>
+                    </ul>
+
+                </div>
+    
+            </div>
+
+            <h1 class="text-center mt-8 pb-8">copy right ©2077 Mok Maard </h1>
+
+        </section>
+        
+</body>
+
+</html>

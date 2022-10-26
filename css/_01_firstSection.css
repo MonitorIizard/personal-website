@@ -1,0 +1,27 @@
+
+.container_profile {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0%;
+    width: 100%;
+    background: url("../assets/_00_profilesPic.jpg") no-repeat fixed center -400px;
+    height: 50vh;
+}
+
+
+.container_profile h1{
+    color: aliceblue;
+}
+
+.table th {
+    padding-right: 25px;
+}
+
+.profile_discription {
+    padding-bottom: 10px;
+}
+
+.profile_picture_shadow {
+    box-shadow: 10px 10px 30px rgb(242, 242, 242);
+}

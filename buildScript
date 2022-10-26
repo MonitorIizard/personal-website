@@ -1,0 +1,9 @@
+mkdir  -p build/
+
+cp -R assets css article.html index.html build/
+
+scp build 6504062620159@202.44.40.199:public_html/
+
+P7o#h0$CS(iAqv7rC
+
+
